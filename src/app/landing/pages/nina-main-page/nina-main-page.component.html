@@ -1,19 +1,14 @@
-<div class ="container">
- <h1 class="title" style=" text-decoration: underline;"> Nina </h1>
- <!-- <h4 style = "margin-top: -10px;">- for Revit - </h4> -->
 
 
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
 
+<div class ="container animate__animated animate__fadeIn">
+    <h1 class="title"> {{ title | titlecase }}</h1>
+    <br> <br>
+    <!-- <button class="secondary">Nina</button> -->
+    <!-- <h4 style = "margin-top: -10px;">- for Revit - </h4> -->
+    <br> <br> <br> <br> <br> <br> <br>
+    
+    <h2 class = "subtitle">{{ description }}</h2>
     <!-- <img class="img-responsive" src="../../../assets/nina.png"> -->
-
-    <h2 class = "subtitle">A collection of tiny tools for Autodesk Revit.</h2>
-    <nina-button></nina-button>
-
+    <nina-button [message]="'Because time matters :)'"></nina-button>
 </div>

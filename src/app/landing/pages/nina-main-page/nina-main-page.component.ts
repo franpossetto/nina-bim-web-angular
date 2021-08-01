@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'nina-main-page',
   templateUrl: './nina-main-page.component.html',
   styleUrls: ['./nina-main-page.component.sass']
 })
-export class NinaMainPageComponent implements OnInit {
+export class NinaMainPageComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  title: string = "nina"
+  description: string = "A collection of tiny tools for Autodesk Revit.";
 
 }
