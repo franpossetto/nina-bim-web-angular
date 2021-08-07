@@ -8,8 +8,8 @@ import { Component, Input } from '@angular/core'
 
 export class NinaButtonComponent {
     
-    private _link: string = "https://github.com/franpossetto/Nina/releases/latest/download/Nina.msi";
-    version: string = "1.4.1"
+    version: string = "1.4.2"
+    private _link: string = "https://github.com/franpossetto/Nina/releases/latest/download/Nina.Setup.v" + this.version + ".msi";
     @Input() message: string = "Hello"    
     download(): void
     {
