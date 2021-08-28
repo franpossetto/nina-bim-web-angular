@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nina-footer',
+  selector: 'nina-footer',
   templateUrl: './nina-footer.component.html',
   styleUrls: ['./nina-footer.component.sass']
 })

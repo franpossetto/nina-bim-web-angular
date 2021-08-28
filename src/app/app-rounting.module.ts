@@ -5,6 +5,7 @@ import { NinaToolsPageComponent } from './landing/pages/nina-tools-page/nina-too
 import { NinaContactPageComponent } from './landing/pages/nina-contact-page/nina-contact-page.component';
 import { NinaContributePageComponent } from './landing/pages/nina-contribute-page/nina-contribute-page.component';
 import { NinaHomePageComponent } from './landing/pages/nina-home-page/nina-home-page.component';
+import { NinaReleasesPageComponent } from './landing/pages/nina-releases-page/nina-releases-page.component';
 
 const routes: Routes = [
     {
@@ -32,6 +33,10 @@ const routes: Routes = [
     {
         path: 'contribute',
         component: NinaContributePageComponent
+    },
+    {
+        path: 'releases',
+        component: NinaReleasesPageComponent
     }//,
     // {
     //     path:'**',
