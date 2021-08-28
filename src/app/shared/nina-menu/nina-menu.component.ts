@@ -11,7 +11,7 @@ export class NinaMenuComponent {
   
   sections: string[] = ["home", "about","tools", "contribute", "contact"];
   selectedSection: string = "home";
-  isMainPage: boolean = true;
+  isMainPage: boolean = false;
   
   checkMainPage(): void {
     if(this.selectedSection == "Home"){

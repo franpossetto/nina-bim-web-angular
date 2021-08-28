@@ -1,19 +1,18 @@
 <div class = "flex-container push-margin-top-20">
-    <div class = "flex-container animate__animated animate__shakeY">
         <div *ngIf="isMainPage; then thenBlock else elseBlock"></div>
         <ng-template #thenBlock>
-            <img class="img-responsive" src="../../../assets/nina-logo-3.svg">
-        <div class="push-margin-left-10">
-            <br>
-            <h1 class="title push-margin-bottom-0"> {{title | uppercase}}</h1>
-            <h3 class="push-margin-top-0">BIM, Revit API, etc...</h3>
-        </div>    
+            <div class="flex-container animate__animated animate__shakeY">
+                <img class="img-responsive" src="../../../assets/nina-logo-3.svg">
+                <div class="push-margin-left-10">
+                    <br>
+                    <h1 class="title push-margin-bottom-0"> {{title | uppercase}}</h1>
+                    <h3 class="push-margin-top-0">BIM, Revit API, etc...</h3>
+                </div>    
+            </div>
         </ng-template>
         <ng-template #elseBlock>
-            <h1 class="title"> {{title | uppercase}} </h1>
+            <h1 class="title push-margin-top-0"> {{title | uppercase}} </h1>
         </ng-template>
-        
-    </div>
     <div class = "push-right">
         <button class ="menu-button" 
                 *ngFor="let section of sections; index as i" 
