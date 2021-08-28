@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class NinaMainPageComponent {
 
   title: string = "nina"
+  title2: string = "for Revit"
+
   description: string = "A collection of tiny tools for Autodesk Revit.";
 
 }
