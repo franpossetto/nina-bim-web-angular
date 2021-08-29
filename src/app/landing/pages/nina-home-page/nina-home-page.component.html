@@ -1,8 +1,21 @@
 <div class = "animate__animated animate__fadeIn">
-    <br>
-    <br>
-    <br>
-    <h2 class = "subtitle push-margin-top-120">{{ description }}</h2>
-    <!-- <nina-button [message]="'Because time matters :)'"></nina-button> -->
-    <nina-button [message]="'Download for Windows'"></nina-button>
+    <div class ="d-none d-lg-block d-xl-block">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class = "subtitle push-margin-top-120 ">{{ description }}</h2>
+        <nina-button [message]="'Download for Windows'"></nina-button>
+    </div>
+
+    <div class="cont-md d-none d-sm-block d-md-block d-lg-none">
+         <h2 class = "subtitle-md push-margin-top-120 ">{{description_md}}</h2>
+         <br>
+        <nina-button [message]="'Download for Windows'"></nina-button>
+    </div>
+
+    <div class="cont-xs d-block d-sm-none">
+        <h2 class = "subtitle-xs push-margin-top-120 ">{{description_sm}}</h2>
+        <nina-button [message]="'Download for Windows'"></nina-button>
+    </div>
 </div>
