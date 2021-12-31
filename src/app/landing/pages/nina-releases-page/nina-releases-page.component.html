@@ -1,1 +1,8 @@
-<nina-in-progress-msg></nina-in-progress-msg>
+<div class ="container animate__animated animate__fadeIn">
+    <ul>
+        <p class="n-title-small push-margin-top-80">More Releases</p>
+        <li *ngFor="let item of releases; let i = index" class = "rel-li">
+            {{item}}
+        </li>
+    </ul>
+</div>

@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './nina-releases-page.component.html',
   styleUrls: ['./nina-releases-page.component.sass']
 })
-export class NinaReleasesPageComponent implements OnInit {
+export class NinaReleasesPageComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  releases: string[] = ["Nina v1.42", "Nina v.1.30", "Nina v.1.2.3", "Nina v.1.30", "Nina v.1.2.3", "Nina v.1.30", "Nina v.1.2.3", "Nina v.1.30", "Nina v.1.2.3", "Nina v.1.30", "Nina v.1.2.3"]
+
+  
 
 }
