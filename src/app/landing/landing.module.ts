@@ -10,6 +10,7 @@ import { NinaContributePageComponent } from './pages/nina-contribute-page/nina-c
 import { NinaReleasesPageComponent } from './pages/nina-releases-page/nina-releases-page.component';
 import { NinaHomePageComponent } from './pages/nina-home-page/nina-home-page.component';
 import { AppRoutingModule } from '../app-rounting.module';
+import { GitHubService } from '../services/github.service';
 
 @NgModule({
     declarations: [
@@ -32,6 +33,9 @@ import { AppRoutingModule } from '../app-rounting.module';
         CommonModule,
         SharedModule,
         AppRoutingModule
+    ],
+    providers: [
+        GitHubService
     ]
 
 })
