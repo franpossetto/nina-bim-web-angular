@@ -1,22 +1,18 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable()
 export class GitHubService {
+  public data: BehaviorSubject<any>;
 
-    public version: string = "";
-    public url: string = ""
-    public latest: any = []
+  constructor(private http: HttpClient) {
+    this.data = new BehaviorSubject(null);
+  }
 
-    constructor(private http: HttpClient){
-        console.log('Servicio inicializado');
-        
-        this.http.get('https://api.github.com/repos/franpossetto/Nina/releases')
-        .subscribe((response: any) => {
-            this.latest = response[0];
-            this.version = this.latest.tag_name;
-            console.log(this.url);
-        });
-    }
-
+  getDataFromGitHub(): Observable<any> {
+    return this.http.get(
+      'https://api.github.com/repos/franpossetto/Nina/releases'
+    );
+  }
 }

@@ -1,4 +1,17 @@
-<div class ="n-container animate__animated animate__fadeIn img-centered">
-    <router-outlet></router-outlet>
+<div *ngIf="loading; else showPage">
+  <div class="d-flex">
+    <div
+      class="spinner-border"
+      role="status"
+      style="position: absolute; top: 50%; left: 47%; width: 6rem; height: 6rem"
+    >
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
 </div>
-<nina-footer></nina-footer>
+<ng-template #showPage>
+  <div class="n-container animate__animated animate__fadeIn img-centered">
+    <router-outlet></router-outlet>
+  </div>
+  <nina-footer></nina-footer>
+</ng-template>
