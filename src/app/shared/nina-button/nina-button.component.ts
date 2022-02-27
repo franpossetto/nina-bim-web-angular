@@ -10,7 +10,6 @@ import { GitHubService } from '../../services/github.service';
 export class NinaButtonComponent {
     
     github_link: string = "https://github.com/franpossetto/Nina/releases"
-    version: string = "v 1.4.2"
     private _link: string = "https://github.com/franpossetto/Nina/releases/latest/download/Nina.msi";
     @Input() message: string = "Hello"    
     download(): void
@@ -18,9 +17,11 @@ export class NinaButtonComponent {
         window.location.assign(this._link)
     }
 
-    constructor (private gitHubService: GitHubService){
-        
-    }
+    get ninaVersion(): string {
+        return this.gitHubService.version;
+    };
+
+    constructor (private gitHubService: GitHubService){ }
 }
 
 

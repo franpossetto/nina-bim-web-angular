@@ -14,7 +14,7 @@ export class GitHubService {
         this.http.get('https://api.github.com/repos/franpossetto/Nina/releases')
         .subscribe((response: any) => {
             this.latest = response[0];
-            this.url = this.latest.tag_name;
+            this.version = this.latest.tag_name;
             console.log(this.url);
         });
     }
